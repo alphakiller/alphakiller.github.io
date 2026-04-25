@@ -1,576 +1,101 @@
-
-
-<title>Port-folio (Rohit Samudralwar)</title>
-
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lobster'>
-<!-- <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'> -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-</head>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142977071-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-142977071-1');
-</script>
-
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rohit Samudralwar | Resume</title>
 <style>
- body{
-	margin-top:1px;
-	background-image:url("images/background.jpg");
-	min-height:500px;
-	background-attachment:fixed;
-	background-position:center;
-	background-size:cover;
-	font-size:16px;
-	font-weight:300; 
-}
-.right-left-mar{
-	margin-left:60px;
-	margin-right:60px;
-}
-.topnav{
-	opacity:0.8;
-	background-color: rgba(81, 26, 137,0.7);
-	overflow:hidden;
-	padding:14px; 
-}
-
-.topnav a{
-	float:left;
-	display:block;
-	text-align:center;
-	padding:8px 16px;
-	font-size:20px;
-	text-decoration:none;
-	color:white;
-}
-.topnav a:hover { 
-	background-color: #ddd;
-  color: black;
-}
-.topnav a.active{
-	background-color:green; 
-	color:white;
-}
-.namebar{
-	text-shadow:2px 2px 2px red, 0 0 25px #cee810, 0 10px 50px #cee810;
-	color:white;
-	text-align:center;
-	font-family: "Times New Roman", Times, serif;
-}
-.mybutton-back{ 
-	width:50px;
-	height:50px;
-
-}
-#myBtn {
-	border-style:solid;
-	border-color:white;
-	border-width:2px; 
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 25px;
-  z-index: 99;
-  cursor: pointer;
-}
-.profile{
-	width:150px;
-	height:180px;
-	border-color:white;
-	border-style:solid;
-	border-width:6px;
-	border-radius:40%;
-	opacity:0.8;
-}
-.intro-text{
-	font-weight:300;
-	text-align:center;
-	color:white;
-}
-.intro-back{
-	background-size:650px;
-	opacity:0.8;
-	background-color:grey;
-	border-radius:10%;
-	padding:10px;
-	color:pink;
-	font-size:20px;
-	font-family:serif, monospace;
-}
-.visit-block{
-	text-align:center;
-}
-.connect-me{
-	margin:2px;
-	width:60px;
-	border-radius:20px;
-	background-color:white;
-}
-.skill-block{
-	margin-left:50px;
-	margin-right:50px;
-}
-.skill-wall{
-	//background-color: rgba(255, 237, 237, 0.65);
-	background-image:url("https://github.com/alphakiller/First/blob/master/skill-wall.jpg?raw=true") ;
-	background-size:cover;
-	border-radius:25px;
-	opacity:0.9;
-	border-color:pink;
-	border-style:solid;
-	margin:50px;
-}
-
-.jumbo-text {
-  background-color: rgba(255, 237, 237, 0.65);
-  border-radius: 10%;
-	padding:18px; 
-  font-family: 'Oswald', sans-serif; 
-	border-style:solid;
-	border-color:white;
-	border-width:10%;
-	margin-top:30px;
-}
-
-/* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
-
-/* Container for skill bars */
-.container {
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-}
-
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:35px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-width:110px;
-	font-weight:bold;
-	font-size:13px;
-	color:#ffffff;
-	background:#6adcfa;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:4px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:35px;
-	line-height:35px;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-bar {
-	height:35px;
-	width:0px;
-	background:#6adcfa;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-}
-
-.skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
-}
-.mywork-back{
-	background-color:rgba(239, 164, 127,0.5);
-	margin:2px;
-}
-.game-ss{
-	padding: 10px;
-}
-.game-ss :hover{
-	opacity:0.8;
-}
-.message{
-	height:200px;
-	margin:1px;
-	background-color:#f1f7dc;
-	opacity:0.9;
-}
-footer {
-  background-color: #9764b7;
-	opacity:0.9;
-  color: white;
-  height: 5.5em;
-}
-
-.footerInfo {
-  text-align: center;
-  font-size: 1.0em;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
+.container{max-width:1100px;margin:auto;padding:32px}
+header{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.hero h1{font-size:42px}
+.hero p{color:#94a3b8;margin-top:10px;max-width:700px}
+.badge{display:inline-block;background:#1e293b;padding:8px 14px;border-radius:999px;margin-top:14px}
+.contact a{display:block;color:#93c5fd;text-decoration:none;margin:6px 0}.download-btn{display:inline-block;background:#2563eb;color:#fff !important;padding:10px 16px;border-radius:10px;font-weight:700;margin-bottom:12px;transition:.2s}.download-btn:hover{background:#1d4ed8;transform:translateY(-2px)}
+section{margin-top:34px}
+.card{background:#111827;border:1px solid rgba(255,255,255,.08);padding:24px;border-radius:18px;margin-top:16px;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+h2{font-size:26px;margin-bottom:10px}
+.job{margin-bottom:22px}
+.job h3{font-size:20px}
+.meta{color:#94a3b8;font-size:14px;margin:6px 0 12px}
+ul{padding-left:20px}
+li{margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.skill{padding:18px;background:linear-gradient(180deg,#0b1220,#111827);border-radius:14px;border:1px solid rgba(255,255,255,.08);transition:.25s}.skill:hover{transform:translateY(-4px);border-color:rgba(96,165,250,.45);box-shadow:0 12px 24px rgba(0,0,0,.25)}.skill strong{display:block;color:#93c5fd;font-size:15px;margin-bottom:8px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font-size:13px;padding:6px 10px;background:#1e293b;border-radius:999px;color:#e2e8f0}
+footer{text-align:center;color:#94a3b8;padding:40px 0}
+@media(max-width:700px){.hero h1{font-size:32px}}
 </style>
-
-  
-  
-  
-  
 </head>
-
-<body translate="no" >
-
-<div id="hilltop"></div>
-<h1 class="topnav">
-	<a class="dec active" href="#home">Home</a>
-  <a class="dec" href="#skillbar">My Skills</a>
-	<a class="dec" href="#mywork">My Work</a>
-  <a class="dec" href="#contact">Contact</a>  
-</h1>
-
-<!DOCTYPE html for overlay>
-<html>
-<head>
-<style>
-body {
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
-}
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-</style>
+<body>
+<div class="container">
+<header>
+<div class="hero">
+<h1>Rohit Samudralwar</h1>
+<p>Software Engineer with 6 years of experience at Amazon, specializing in building scalable distributed systems and high-volume financial platforms. Experienced in designing and delivering backend systems processing $30B+ monthly transactions and 500M+ events, with a focus on reliability, automation, and system scalability. Skilled in Java, AWS, and event-driven architectures, with strong ownership in driving end-to-end system design and improving operational efficiency.</p>
+<div class="badge">Java • AWS • Distributed Systems • Microservices</div>
+</div>
+<div class="contact">
+<a class="download-btn" href="resume/Rohit_Samudralwar_Resume.pdf" download>⬇ Download Resume</a>
+<a href="mailto:samudralwar1@gmail.com">samudralwar1@gmail.com</a>
+<a href="tel:+917057165987">+91-7057165987</a>
+<a href="https://linkedin.com/in/rohit-samudralwar-22613012b" target="_blank">LinkedIn Profile</a>
+<p>Pune, India</p>
+</div>
+</header>
 <section>
-	<div id="myNav" class="overlay">
-  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  		<div align=center style="color:white; padding:50px">
-  			<h2><em>Update In Progress</em></h2><h4>(No Information Found)</h4>
-  		</div>
-	</div>
-	<span style="font-size:20px;cursor:pointer;color:white" onclick="openNav()">&#9776; <em>Know More About Me</em></span>
+<h2>Experience</h2>
+<div class="card">
+<div class="job">
+<h3>Software Development Engineer II — Amazon India</h3>
+<div class="meta">Dec 2022 – Present | Pune</div>
+<ul>
+<li>Designed and developed a next-generation cash reconciliation system in Finance Tech, processing $30B+ monthly volume across 500M+ transactions.</li>
+<li>Built a scalable reconciliation framework to validate and test new reconciliation logic, improving overall reconciliation accuracy from 90% to 97% over 2 years.</li>
+<li>Developed PRISM, an automated ticketing and resolution system for unreconciled cash, generating 300+ tickets for banking partners with precise root cause analysis.</li>
+<li>Enabled ~70% auto-resolution of reconciliation issues through intelligent strategies such as event reprocessing and heuristic-based cash-to-remittance matching, significantly reducing manual intervention.</li>
+</ul>
+</div>
+<div class="job">
+<h3>Software Development Engineer I — Amazon India</h3>
+<div class="meta">Jul 2020 – Nov 2022 | Pune</div>
+<ul>
+<li>Built a product catalog ingestion system in the Supply Chain domain, enabling onboarding of brands like Sephora.</li>
+<li>Developed end-to-end pipelines for catalog, pricing, and inventory updates via multiple integration methods.</li>
+<li>Implemented synchronous and asynchronous workflows with SFTP-based ingestion, supporting up to 500 TPS for external integrations.</li>
+</ul>
+</div>
+</div>
 </section>
-<script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
-
-</html>
-
-
-<a href="#hilltop"><img id=myBtn class="mybutton-back" title="Go to Top" src="images/top.gif">  
-</a> 
-
-	<section id="home" >
-		<div class="namebar">
-			<h2> Rohit Samudralwar</h2><h3 style="color:pink">(-- AlPha_kiLLer --)</h3>
-		</div>
-    <div class="" style="padding:20px" align="center">
-    	<img align="center" class="profile img-responsive" src="images/profile.jpg" />
-      <h3 class=" jumbo-text"><b><em>Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.
-				<HR></HR><em><b>
-			</h3> 
-    </div>
-  </section>
-	<section id="visits" class="visit-block">
-		<a target="_blank" title="Github" class="" href="https://github.com/alphakiller"><img class="connect-me" src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697061-github-128.png"></a>
-		<a target="_blank" title="Linkedin" class="" href="https://www.linkedin.com/in/rohit-samudralwar-22613012b/"><img class="connect-me" src="https://cdn2.iconfinder.com/data/icons/social-18/512/LinkedIn-2-128.png"></a>
-		<a target="_blank" title="Codechef" class="" href="https://www.codechef.com/users/alpha_killer"><img class="connect-me" src="https://www.codechef.com/sites/default/files/uploads/pictures/a043d744daa2eb0a884ddb28e760c464.jpeg"></a>
-		<a target="_blank" title="Hackerearth" class="" href="https://www.hackerearth.com/@alpha_killer"><img class="connect-me" src="https://www.stopstalk.com/stopstalk/static/images/hackerearth_logo.png"></a>
-		<a target="_blank" title="Twitter" class="" href="https://twitter.com/samudralwar1"><img class="connect-me" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Twitter-2-128.png"></a>
-  		<a target="_blank" title="Google_plus" class="" href="https://plus.google.com/104354827596265293619"><img class="connect-me" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Google_plus-128.png"></a>
-  		<a target="_blank" title="Facebook" class="" href="https://www.facebook.com/rohit.samudralwar"><img class="connect-me" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-2-128.png"></a>
-		<a target="_blank" title="Skype" class="" href=""><img class="connect-me" src="https://cdn2.iconfinder.com/data/icons/social-18/512/Skype-3-128.png"></a>
-	</section> 
-	<section id="skillbar" class="skill-block" >
-		<div class=" row skill-wall">
-			<h2 align=center style="color:white"><b><em>! --SKILLS-- !</em></b></h2>
-			<div class="col-sm-6">
-				<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title" style="background: #d35400;">	
-							<span>CSS</span>
-					</div>
-					<div class="skillbar-bar" style="background: #e67e22;"></div>
-					<div class="skill-bar-percent">60%</div>
-				</div> 
-				<!-- End Skill Bar -->
-				<div class="skillbar clearfix " data-percent="45%">
-					<div class="skillbar-title" style="background: #2980b9;">					
-						<span>JavaScript</span>
-					</div>
-					<div class="skillbar-bar" style="background: #3498db;"></div>
-					<div class="skill-bar-percent">45%</div>
-				</div> 
-				<!-- End Skill Bar -->
-				<div class="skillbar clearfix " data-percent="80%">
-					<div class="skillbar-title" style="background: #2c3e50;">					
-						<span>HTML</span>
-					</div>
-					<div class="skillbar-bar" style="background: #2c3e50;"></div>
-					<div class="skill-bar-percent">80%</div>
-				</div> 
-				<!-- End Skill Bar -->
-				<div class="skillbar clearfix " data-percent="70%">
-					<div class="skillbar-title" style="background: #46465e;">					
-						<span>STL</span>
-					</div>
-					<div class="skillbar-bar" style="background: #5a68a5;"></div>
-					<div class="skill-bar-percent">70%</div>
-				</div> 
-				<!-- End Skill Bar -->
-			</div>
-			<div class="col-sm-6">
-				<div class="skillbar clearfix " data-percent="75%">
-					<div class="skillbar-title" style="background: #333333;">					
-						<span>C++</span> 
-					</div>
-					<div class="skillbar-bar" style="background: #525252;"></div>
-					<div class="skill-bar-percent">75%</div>
-				</div> 
-				<!-- End Skill Bar -->
-				<div class="skillbar clearfix " data-percent="90%">
-					<div class="skillbar-title" style="background: #27ae60;">				
-						<span>C</span> 
-					</div>
-					<div class="skillbar-bar" style="background: #2ecc71;"></div>
-					<div class="skill-bar-percent">90%</div>
-				</div> 
-				<!-- End Skill Bar -->
-				<div class="skillbar clearfix " data-percent="30%">
-					<div class="skillbar-title" style="background: #124e8c;">					
-						<span>Photoshop</span> 
-					</div>
-					<div class="skillbar-bar" style="background: #4288d0;"></div>
-					<div class="skill-bar-percent">30%</div>
-				</div> 
-				<!-- End Skill Bar -->		
-				<div class="skillbar clearfix " data-percent="30%">
-					<div class="skillbar-title" style="background:#ed4e68;">					
-						<span>Bootstrap</span> 
-					</div>
-					<div class="skillbar-bar" style="background:pink;"></div>
-					<div class="skill-bar-percent">30%</div>
-				</div> 
-				<!-- End Skill Bar -->
-			</div>
-		</div>
-	</section>
-	<section id="mywork">
-		<div class="row mywork-back" align="center">
-			<div class="col-sm-4" style="color:white; margin:50px;">
-				<em style="color:pink"><h2> --<' My Work '>-- </h2></em>
-				<h3>Click on the Image to play Game..!</h3>
-			</div>
-			<div class="col-sm-4 game-ss">
-				<a target=_blank href="tic-tac-toe/game.html"><img width="290" height="390" src="tic-tac-toe/screenshot.png" alt="Game"></img></a>
-			</div>
-		</div>
-	</section>	
-	<div class="container sections" id="contact">
-        <section>
-            <div class="page-header text-center">
-                <h2>Drop a Note</h2><small>Let's talk about your project and get to work</small>
-            </div>
-            <div class="col-md-4">
-                <h3>Thank you for reviewing my portfolio</h3>
-            </div>
-            <div class="col-md-8">
-                <!--Contact form-->
-                <form class="form-horizontal" id="contact_form" _lpchecked="1">
-                    <fieldset>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="name">Name</label>
-                            <div class="col-md-8">
-                                <input id="name" name="name" type="text" placeholder="Enter your full name here" class="form-control input-md" required="">
-                            </div>
-                        </div>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="email">Email</label>
-                            <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="Enter your email address here" class="form-control input-md" required="">
-                            </div>
-                        </div>
-                        <!-- Textarea -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="msg">Message</label>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="msg" name="msg" cols="6" rows="6"></textarea>
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="submit"></label>
-                            <div class="col-md-4">
-                                <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-                <!--Contact form end-->
-            </div>
-        </section>
-    </div>
-	<footer>
-		<a href="mailto:samudralwar1@gmail.com" target="_top">Send Mail</a>
-		<p class="footerInfo">&copy 2017. All Rights Reserved | Design: <span style="color:#d7e512">AlPha_kiLLer</span></p>
-		<h5 align="right"><a align="right" href="Quest_game_peter/alpha.html" target="_blank">Peter</a><h5>
-		<h5 align="left"><a align="left" href="BTP/login.html" target="_blank">Peter</a><h5>
-	</footer>
-
-
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script>
-    jQuery(document).ready(function(){
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},6000);
-	});
-});
-
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {  
-        document.getElementById("myBtn").style.display = "block";
-}
-
-
-jQuery(function($)  
-{
-    $("#contact").submit(function()
-    {
-        var email = $("#email").val(); // get email field value
-        var name = $("#name").val(); // get name field value
-        var msg = $("#msg").val(); // get message field value
-        $.ajax(
-        {
-            type: "POST",
-            url: "https://mandrillapp.com/api/1.0/messages/send.json",
-            data: {
-                'key': 'F***_o**',
-                'message': {
-                    'from_email': email,
-                    'from_name': name,
-                    'headers': {
-                        'Reply-To': email
-                    },
-                    'subject': 'Website Contact Form Submission',
-                    'text': msg,
-                    'to': [
-                    {
-                        'email': 'samudralwar1@gmail.com',
-                        'name': 'Rohit Samudralwar',
-                        'type': 'to'
-                    }]
-                }
-            }
-        })
-        .done(function(response) {
-            alert('Your message has been sent. Thank you!'); // show success message
-            $("#name").val(''); // reset field after successful submission
-            $("#email").val(''); // reset field after successful submission
-            $("#msg").val(''); // reset field after successful submission
-        })
-        .fail(function(response) {
-            alert('Error sending message.\n We will work to resolve it');
-        });
-        return false; // prevent page refresh
-    });
-});
-
-$('.nav a').on('click', function(){
-    $('.btn-navbar').click(); //bootstrap 2.x
-    $('.navbar-toggle').click() //bootstrap 3.x by Richard
-});
-  </script>
-
-  
-  
-
+<section>
+<h2>Skills</h2>
+<div class="grid">
+<div class="skill"><strong>Languages</strong><div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">C++</span></div></div>
+<div class="skill"><strong>Backend</strong><div class="chips"><span class="chip">Spring Boot</span><span class="chip">REST APIs</span><span class="chip">Microservices</span></div></div>
+<div class="skill"><strong>Cloud & AWS</strong><div class="chips"><span class="chip">Lambda</span><span class="chip">ECS</span><span class="chip">ECR</span><span class="chip">S3</span><span class="chip">DynamoDB</span><span class="chip">SQS</span><span class="chip">SNS</span><span class="chip">CDK</span></div></div>
+<div class="skill"><strong>Databases</strong><div class="chips"><span class="chip">SQL</span><span class="chip">NoSQL</span><span class="chip">Data Modeling</span></div></div>
+<div class="skill"><strong>Architecture</strong><div class="chips"><span class="chip">Distributed Systems</span><span class="chip">Event-Driven</span><span class="chip">Scalability</span><span class="chip">High Availability</span><span class="chip">Fault Tolerance</span></div></div>
+<div class="skill"><strong>DevOps & Tools</strong><div class="chips"><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Git</span></div></div>
+</div>
+</section>
+<section>
+<h2>Education</h2>
+<div class="card">
+<h3>B.Tech — LNMIIT Jaipur</h3>
+<p>Communication and Computer Science • 2020 • CGPA 7.2/10</p>
+</div>
+</section>
+<section>
+<h2>Awards</h2>
+<div class="card">
+<ul>
+<li>Winner — Smart India Hackathon 2019</li>
+<li>ACM ICPC 2018 India Regionalist</li>
+<li>ACM ICPC 2017 India Regionalist</li>
+</ul>
+</div>
+</section>
+<footer></footer>
+</div>
 </body>
 </html>
- 
